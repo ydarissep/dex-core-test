@@ -31,6 +31,7 @@ fetch('https://raw.githubusercontent.com/ydarissep/dex-core/main/index.html').th
     let loop = true
     while(true){
         if(loop){
+            console.log("test")
             if(typeof fetchData !== "undefined"){
                 await fetchData()
                 break
