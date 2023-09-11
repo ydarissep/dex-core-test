@@ -26,23 +26,6 @@ fetch('https://raw.githubusercontent.com/ydarissep/dex-core/main/index.html').th
     }).catch(error => {
         console.warn(error)
     })    
-
-
-    let loop = true
-    while(true){
-        if(loop){
-            console.log("test")
-            if(typeof fetchData !== "undefined"){
-                await fetchData()
-                break
-            }
-            loop = false
-            setTimeout(() => {
-                loop = true
-            }, "100");
-        }
-    }   
-
 }).catch(error => {
 	console.warn(error)
 })
